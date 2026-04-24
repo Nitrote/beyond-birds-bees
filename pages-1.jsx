@@ -38,8 +38,7 @@ function Home({ t, setRoute }) {
             <button className="btn btn-secondary" onClick={() => setRoute('/about')}>{t.nav.about}</button>
           </Reveal>
 
-          <BeeSticker size={100} rotate={-18} style={{ position: 'absolute', top: 40, right: '6%' }}/>
-          <BirdSticker size={110} rotate={12} style={{ position: 'absolute', bottom: 60, right: '12%' }}/>
+          <img src="assets/logo-mark.png" alt="" className="hero-mark" aria-hidden="true"/>
         </div>
 
         {/* Marquee */}

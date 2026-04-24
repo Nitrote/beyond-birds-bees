@@ -357,14 +357,58 @@ img { display: block; max-width: 100%; }
   letter-spacing: -0.02em;
 }
 .logo-mark {
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: var(--accent-a);
   display: grid;
   place-items: center;
   font-size: 16px;
 }
+.logo-mark-img {
+  background: transparent;
+  object-fit: contain;
+  transition: transform .5s cubic-bezier(.3, 1.4, .5, 1);
+}
+.logo:hover .logo-mark-img {
+  transform: rotate(-12deg) scale(1.06);
+}
+.logo-mark-footer {
+  background: color-mix(in srgb, var(--bg) 12%, transparent);
+  padding: 2px;
+}
+.logo-text {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+.logo-birds, .logo-bees {
+  font-family: var(--ff-display);
+  font-style: italic;
+  font-weight: 500;
+}
+.logo-birds {
+  color: var(--pink-500);
+}
+.logo-bees {
+  color: var(--green-500);
+}
+.logo-amp {
+  display: inline-block;
+  font-family: var(--ff-mono);
+  font-style: normal;
+  font-size: 14px;
+  color: var(--ink-60);
+  transform: translateY(-2px);
+  margin: 0 2px;
+  transition: transform .4s ease;
+}
+.logo:hover .logo-amp {
+  transform: translateY(-2px) rotate(180deg);
+}
+footer .logo-birds { color: var(--pink-300); }
+footer .logo-bees { color: var(--green-300); }
+footer .logo-amp { color: color-mix(in srgb, var(--bg) 60%, transparent); }
 .nav-links {
   display: flex;
   gap: 4px;

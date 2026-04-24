@@ -120,8 +120,8 @@ function Nav({ route, setRoute, lang, setLang, t }) {
     <nav className="nav">
       <div className="nav-inner">
         <a href="#/" onClick={(e) => { e.preventDefault(); go('/'); }} className="logo">
-          <span className="logo-mark">🐝</span>
-          <span>Beyond <em style={{ fontStyle: 'italic' }}>b&amp;b</em></span>
+          <img src="assets/logo-mark.png" alt="" className="logo-mark logo-mark-img"/>
+          <span className="logo-text">Beyond <span className="logo-birds">Birds</span><span className="logo-amp">✦</span><span className="logo-bees">Bees</span></span>
         </a>
 
         <div className="nav-links" style={{ display: 'flex' }}>
@@ -182,8 +182,8 @@ function Footer({ t, route, setRoute }) {
       <div className="footer-inner">
         <div>
           <div className="logo" style={{ color: 'var(--bg)', marginBottom: 16 }}>
-            <span className="logo-mark" style={{ background: 'var(--accent-a)' }}>🐝</span>
-            <span>Beyond <em>b&amp;b</em></span>
+            <img src="assets/logo-mark.png" alt="" className="logo-mark logo-mark-img logo-mark-footer"/>
+            <span className="logo-text">Beyond <span className="logo-birds">Birds</span><span className="logo-amp">✦</span><span className="logo-bees">Bees</span></span>
           </div>
           <p style={{ fontSize: 14, lineHeight: 1.6, maxWidth: 320, color: 'color-mix(in srgb, var(--bg) 80%, transparent)' }}>
             {t.footer.blurb}
